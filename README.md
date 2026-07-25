@@ -1,40 +1,26 @@
-# 🧠 Stroke Prediction Using Machine Learning
+# 🧠 Stroke Prediction Web Application
 
-## 📌 Project Overview
+An end-to-end Machine Learning web application that predicts the likelihood of stroke using patient health information.
 
-This project predicts whether a patient is at risk of stroke using a Machine Learning model trained on the Kaggle Healthcare Stroke Prediction Dataset.
+## 🚀 Live Demo
 
-The application includes:
-
-- FastAPI REST API for prediction
-- Streamlit web interface
-- Machine Learning model using Scikit-learn/XGBoost
-- Docker support for containerization
+- **Frontend (Streamlit):** https://jqwbugwrw8ffnsxeubyqjg.streamlit.app
+- **Backend API (Render):** https://stroke-prediction-ml-si29.onrender.com
+- **API Documentation (Swagger):** https://stroke-prediction-ml-si29.onrender.com/docs
 
 ---
 
-## 📊 Dataset
+## 📌 Features
 
-- **Dataset:** Healthcare Stroke Prediction Dataset
-- **Source:** Kaggle
-- **Target Variable:** `stroke`
-
----
-
-## 🚀 Features
-
-- Data preprocessing
-- Missing value handling
-- Feature encoding
-- Feature scaling
-- Machine Learning prediction
-- REST API using FastAPI
-- Interactive UI using Streamlit
-- Dockerized application
+- Predicts stroke risk using a trained Machine Learning model
+- Interactive Streamlit user interface
+- FastAPI REST API backend
+- Real-time predictions
+- Cloud deployment
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -43,80 +29,44 @@ The application includes:
 - XGBoost
 - FastAPI
 - Streamlit
-- Joblib
-- Docker
+- Git & GitHub
+- Render
+- Streamlit Community Cloud
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
-Stroke-prediction/
+```text
+Stroke-Prediction/
 │
 ├── app.py
 ├── streamlit_app.py
 ├── requirements.txt
-├── Dockerfile
-├── README.md
-├── .gitignore
 ├── stroke_model.joblib
 ├── healthcare-dataset-stroke-data.csv
-└── screenshots/
+├── README.md
+├── .gitignore
+└── Dockerfile
 ```
+
+## 📊 Dataset
+
+- Healthcare Stroke Dataset
+- Source: Kaggle
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
-
 ```bash
-git clone https://github.com/your-username/Stroke-Prediction.git
-```
-
-### Move into the project
-
-```bash
-cd Stroke-Prediction
-```
-
-### Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-### Activate the virtual environment
-
-Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### Install dependencies
-
-```bash
+git clone https://github.com/USERNAME/REPOSITORY.git
+cd REPOSITORY
 pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run the FastAPI Application
-
-```bash
 uvicorn app:app --reload
 ```
 
-Open:
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
-
-## ▶️ Run the Streamlit Application
+Run Streamlit:
 
 ```bash
 streamlit run streamlit_app.py
@@ -128,67 +78,18 @@ streamlit run streamlit_app.py
 
 ### POST `/predict`
 
-Accepts patient information and returns the predicted stroke risk.
-
----
-
-## 🤖 Machine Learning Pipeline
-
-- Data Cleaning
-- Missing Value Imputation
-- Feature Encoding
-- Feature Scaling
-- Model Training
-- Model Evaluation
-- Model Serialization using Joblib
-- Prediction using FastAPI
-
----
-
-## 📈 Model Performance
-
-**Model:** _(Update with your final model name, e.g., XGBoost Classifier or Random Forest)_
-
-Add your evaluation metrics here, for example:
-
-- Accuracy:
-- Precision:
-- Recall:
-- F1-score:
-- ROC-AUC:
+Returns the predicted stroke risk.
 
 ---
 
 ## 📸 Screenshots
 
-Add screenshots after deployment.
-
-Example:
-
-- Home Page
-- Prediction Result
-- FastAPI Swagger UI
+Add screenshots here after uploading them to a `screenshots/` folder.
 
 ---
 
-## 🔮 Future Improvements
-
-- Deploy FastAPI to Render
-- Deploy Streamlit to Streamlit Community Cloud
-- Add user authentication
-- Monitor model performance
-- Improve UI/UX
-
----
-
-## 👤 Author
+## 👨‍💻 Author
 
 **Lakshmikanto Mondal**
 
-Aspiring Data Scientist | Machine Learning Enthusiast
-
----
-
-## 📄 License
-
-This project is for educational and portfolio purposes.
+GitHub: https://github.com/lakshmikanto59
