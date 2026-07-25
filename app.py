@@ -4,7 +4,9 @@ import pandas as pd
 import joblib
 
 app = FastAPI(
-    title="Stroke Prediction API"
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json"
 )
 
 model = joblib.load("stroke_model.joblib")
